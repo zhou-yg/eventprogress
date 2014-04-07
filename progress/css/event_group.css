@@ -1,0 +1,88 @@
+#groups_window{
+	background:#F1F1F1;
+	margin: 0 auto;
+	width: 800px;
+	height: 800px;
+}
+/*-------------------------------------------*/
+#groups_window_title{
+	background:#9B9B9B;
+	margin: 0 auto;
+	width: 750px;
+	height: 80px;
+	
+	padding-left:25px;
+	padding-right:25px;
+}
+#groups_window_title #groups_window_title_text{
+	font-size: 50px;
+}
+/*---------------------------------------------*/
+#groups_window_types{
+	width: 750px;
+	height: 40px;
+	
+	position: relative;
+	top: 20px;
+	left: 25px;
+}
+#groups_window_types .groups_type_one{
+	background: #9B9B9B;
+	width: 120px;
+	height: 40px;
+	
+	font-weight:bold;
+	line-height:40px;
+	text-align:center;
+	color:#FFFFFF;
+	
+	float: left;
+	
+	cursor:default;
+}
+#groups_window_types .groups_type_two{
+	background:#9B9B9B;
+	width: 120px;
+	height: 40px;
+	
+	font-weight:bold;
+	line-height:40px;
+	text-align:center;
+	color:#FFFFFF;
+	
+	float: right;
+	
+	cursor: pointer;
+}
+#groups_window_types .groups_type_one:hover{
+}
+#groups_window_type a{
+	color:#FFFFFF;
+}
+/*---------------------------------------------*/
+#groups_window_list{
+	background: #FFFFFF;
+	width: 750px;
+	height: 610px;
+	position: relative;
+	top: 45px;
+	left:25px;
+}
+#groups_window_list .list_group{
+	width: 250px;
+	height: 100px;
+	
+	float: left;
+}
+#groups_window_list .list_group_label{
+	background:#F1F1F1;
+	width: 180px;
+	height: 50px;
+	line-height:50px;
+	
+	text-align: center;
+	
+	position: relative;
+	top: 25px;
+	left: 35px;
+}
