@@ -1,0 +1,146 @@
+#events_window{
+	margin: 0 auto;
+	width: 800px;
+	height: 100%;
+}
+/*-------------1--------------*/
+#events_msgs_list{
+	width: 448px;
+	min-height:360px;
+	border: 1px solid #DCDCDC;
+	padding:10px;
+	
+	float: left;
+}
+#events_msgs_list .msg_one{
+	width: 426px;
+	height: 190px;
+	border: 1px solid #DCDCDC;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 15px;
+}
+#events_msgs_list .msg_one_name{
+	height: 25px;
+	color: #0071FF;
+	font-weight:bold;
+	line-height: 25px;
+}
+#events_msgs_list .msg_one_content{
+	width: 420px;
+	height: 75px;
+
+	float: left;
+}
+#events_msgs_list .msg_one_content_topic{
+	color: #0071FF;
+}
+#events_msgs_list .msg_one_img{
+	width: 420px;
+	height: 60px;
+	
+	float: left;
+}
+#events_msgs_list .msg_one_time{
+	font-size: 12px;
+	position:relative;
+	top:5px;
+	float: left;
+}
+/*---------------2-----------------*/
+#events_target{
+	width: 298px;
+	min-height:40px;
+	border: 1px solid #DCDCDC;
+	padding:10px;
+	
+	float: right;
+}
+#events_target #target_title{
+	margin:0 auto;
+	background:#F3F3F3;
+	width: 298px;
+	height: 30px;
+	line-height:30px;
+	
+	text-align:center;
+	font-size:18px;
+	
+}
+#events_target .target_one{
+	width: 298px;
+	height: 30px;
+	line-height:30px;
+	text-decoration: underline;
+}
+#events_target .target_complete{
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	float: right;
+}
+#events_target .target_complete_button{
+	background:#B0D3FF;
+	width: 42px;
+	height: 22px;
+	position: relative;
+	top: 4px;
+	left: -5px;
+}
+/*--------------------------------*/
+#target_sned{
+	margin-top:15px;
+	margin-bottom:15px;
+	
+	width: 298px;
+	height: 25px;
+	border: 1px solid #DCDCDC;
+	padding:10px;
+	
+	float: right;
+}
+#target_obj{
+	width: 200px;
+	height: 20px;
+	border-radius: 4px;
+}
+/*--------------------------------*/
+#events_send{
+	width: 298px;
+	height: 220px;
+	border: 1px solid #DCDCDC;
+	
+	padding:10px 10px;
+	float: right;
+}
+#events_send #send_form{
+	width: 100%;
+	height: 100%;
+}
+#send_form .form_content{
+	width:298px;
+	margin:5px 0;
+	float: left;
+}
+#send_form .preTagLeft{
+	float: left;
+}
+#send_form .preTagRight{
+	float: right;
+}
+#send_form #form_msg{
+	width: 250px;
+	height: 100px;
+	min-width: 250px;
+	min-height: 100px;
+	max-width: 250px;
+	max-height: 100px;
+	
+	border-radius:8px;
+	
+	float: right;
+}
+#send_form #form_img{
+	width:220px;
+	float: right;
+}
