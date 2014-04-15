@@ -5,7 +5,7 @@
 		<title>Progress List</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/init.css" />
-		<link rel="stylesheet" type="text/css" href="css/events_msgs.css" />
+		<link rel="stylesheet" type="text/css" href="css/style_msgslist.css" />
 	</head>
 	<body>
 		<iframe id="headerIframe" src="header.html"></iframe>
