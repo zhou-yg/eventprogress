@@ -5,6 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/init2.css" />
 		<link rel="stylesheet" type="text/css" href="css/style_mygroup.css" />
+		<link rel="stylesheet" type="text/css" href="css/style_createwindow.css" />
 	</head>
 	<body>
 		<iframe id="headerIframe" src="header.html"></iframe>
@@ -18,13 +19,13 @@
 						<li class="mygroups_type_one">
 							你所在的组
 						</li>
-						<li id="lookupAllGroups" class="mygroups_type_two">
+						<li id="lookupAllGroups" class="mygroups_type_two" onclick="lookupAll()">
 							<a href="#">浏览所有组</a>
 						</li>
 					</ul>
 				</div>
 				<div id="mygroups_window_list">
-					<ul>
+					<ul id="mygroups_window_list_ul">
 						<li class="list_group">
 							<div class="list_group_label">
 								<a href="#">Left 4 Dead</a>
@@ -51,7 +52,7 @@
 							</div>
 						</li>
 						<li class="list_group">
-							<div class="list_group_create">
+							<div id="createButton" class="list_group_create" onclick="create()">
 								创建新的组
 							</div>
 						</li>
@@ -62,7 +63,7 @@
 			<div id="groupslist_window">
 				<div id="allgroups_window_types">
 					<ul>
-						<li id="lookupMyGroups" class="allgroups_type_one">
+						<li id="lookupMyGroups" class="allgroups_type_one" onclick="lookupMy()">
 							<a href="#">你所在的组</a>
 						</li>
 						<li class="allgroups_type_two">
@@ -83,6 +84,25 @@
 							</div>
 						</li>
 					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="blank"> </div>
+		<div id="loginContainer" class="loginCantainer"> </div>
+		<div id="loginFrame" class="loginFrame">
+			<div id="loginContentText" class="loginContent">
+				<h1 class="loginTitle">Your Group</h1>
+				<p>
+					<label class="label">group name</label>
+					<input id="groupName" maxlength="320" type="text" class="input" />
+				</p>
+				<p>
+					<label class="label">group description</label>
+					<textarea id="groupDescription" class="inputDes" maxlength="60"></textarea>
+				</p>
+				<p id='secondPs'> </p>
+				<div class="loginBtn">
+					<div id="loginButton" class="loginBg" >Create</div>
 				</div>
 			</div>
 		</div>

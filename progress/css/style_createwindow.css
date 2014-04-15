@@ -1,0 +1,95 @@
+#blank{
+	display: none;
+}
+.loginCantainer{
+	
+	background:#000000;
+	opacity:0.7;
+	width: 100%;
+	height:100%;
+	position:fixed;
+	
+	top:0;
+	left:0;
+	
+	display: none;
+	z-index: 5;
+}
+.loginFrame{
+	
+	width: 400px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -213.5px;
+	height: 300px;
+	background: #000;
+	border: 5px solid #525e67;
+	border-radius: 3px;
+	
+	display:none;
+	z-index: 10;
+}
+.loginContent{
+	position: relative;
+	top:0;
+	padding:20px;
+	
+	z-index: 1;
+}
+.loginTitle{
+	margin: 0 auto;
+	background:none;
+	color:#FFFFFF;
+	text-align: center;
+}
+.errorStyle{
+	background: #FF0000;
+	color: #FFFFFF;
+	border-radius: 5px;
+}
+.label{
+	color: #68727b;
+	display: block
+}
+.input{
+	background: #FFFFFF;
+	color: #000000;
+	
+	padding: 7px;
+	font-size:14px;
+	width:345px;
+	border: 1px solid #c0c0c0;
+	border-radius: 5px;
+}
+.inputDes{
+	background: #FFFFFF;
+	color: #000000;
+	
+	padding: 7px;
+	font-size:14px;
+	width:345px;
+	max-width:345px;
+	height:32px;
+	max-height:32px;
+	
+	border: 1px solid #c0c0c0;
+	border-radius: 5px;
+	
+	
+}
+.loginBtn{
+	color:#FFFFFF;
+	background: none;
+	border: 0;
+	height: auto;
+	text-align: center;
+	cursor: pointer;
+}
+.loginBg{
+	background:#06a7e1;
+	width: 80px;
+	height:40px;
+	line-height: 40px;
+	border-radius:7px;
+}
