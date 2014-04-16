@@ -52,7 +52,7 @@
 							</div>
 						</li>
 						<li class="list_group">
-							<div id="createButton" class="list_group_create" onclick="create()">
+							<div id="createButton" class="list_group_create" onclick="createInput()">
 								创建新的组
 							</div>
 						</li>
@@ -88,10 +88,10 @@
 			</div>
 		</div>
 		<div id="blank"> </div>
-		<div id="loginContainer" class="loginCantainer"> </div>
-		<div id="loginFrame" class="loginFrame">
-			<div id="loginContentText" class="loginContent">
-				<h1 class="loginTitle">Your Group</h1>
+		<div id="groupContainer" class="groupCantainer" onclick="createCancel()"> </div>
+		<div id="groupFrame" class="groupFrame">
+			<div id="groupContentText" class="groupContent">
+				<h1 class="groupTitle">Your Group</h1>
 				<p>
 					<label class="label">group name</label>
 					<input id="groupName" maxlength="320" type="text" class="input" />
@@ -101,8 +101,8 @@
 					<textarea id="groupDescription" class="inputDes" maxlength="60"></textarea>
 				</p>
 				<p id='secondPs'> </p>
-				<div class="loginBtn">
-					<div id="loginButton" class="loginBg" >Create</div>
+				<div class="groupBtn">
+					<div id="groupButton" class="groupBg" onclick="createComplete()" >Create</div>
 				</div>
 			</div>
 		</div>

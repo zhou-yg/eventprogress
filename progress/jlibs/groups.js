@@ -11,28 +11,41 @@ var glideToAll2 = new glidelr("glideToAll2");
 var glideToMy1 = new glidelr("glideToMy1");
 var glideToMy2 = new glidelr("glideToMy2");
 
-function lookupAll(){
-	glideToAll1.go(mygroupsid,1,800);
-	glideToAll2.go(allgroupsid,1,800);
-
-	setAll.init();
-}
-function lookupMy(){
-	glideToMy1.go(mygroupsid,1,-800);
-	glideToMy2.go(allgroupsid,1,-800);
-	
-	setMy.init();
-}
-function createInput(){
-	
-}
-function createComplete(){
-	
-}
 /*-----------------------------------------------------------*/
 var createG = function(){
+	var bgObj;
+	var frameObj;
+
 	return{
 		init : function(){
+			bgObj = Im.getObj("groupContainer");
+			frameObj = Im.getObj("groupFrame");
+		},
+		createCancel : function(){
+			bgObj.style.display = "none";
+			frameObj.style.display = "none";
+		},
+		createInput : function(){
+			bgObj.style.display = "block";
+			frameObj.style.display = "block";
+		},
+		createComplete : function(){
+			bgObj.style.display = "none";
+			frameObj.style.display = "none";
+			
+			var groupNameObj = Im.getObj("groupName");
+			var groupDescriptionObj = Im.getObj("groupDescription");
+			
+			var groupMsgObj = new Object();
+			groupMsgObj["type"] = "create";
+			groupMsgObj["name"] = groupNameObj.value;
+			groupMsgObj["description"] = groupDescriptionObj.value;
+			
+			var jsonData = JSON.stringify(groupMsgObj);
+			sendData = jsonData;
+			Im.sendRequest("http://localhost/EventProgress/progress/phps/groups_handler.php",jsonData,"POST",this.createCompleteResponse);
+		},
+		createCompleteResponse : function(){
 			
 		}
 	}
@@ -40,7 +53,6 @@ var createG = function(){
 var setAll = function(){
 	return{
 		init:function(){
-			console.log("setAll");
 			Im.sendRequest("http://localhost/EventProgress/progress/phps/groups_handler.php","allinit","POST",this.setAllInitResponse);
 		},
 		setAllInitResponse : function(){
@@ -79,7 +91,6 @@ var setMy = function(){
 	
 	return{
 		init:function(){			
-			console.log("setMy");
 			Im.sendRequest("http://localhost/EventProgress/progress/phps/groups_handler.php","myinit","POST",this.setMyInitResponse);
 		},
 		setMyInitResponse : function(){
@@ -97,3 +108,32 @@ var setMy = function(){
 		}
 	}
 }();
+/*--------------------------------------------*/
+createG.init();
+/*--------------------------------------------*/
+function lookupAll(){
+	console.log("setAll");
+
+	glideToAll1.go(mygroupsid,1,800);
+	glideToAll2.go(allgroupsid,1,800);
+	setAll.init();
+}
+function lookupMy(){
+	console.log("setMy");
+	glideToMy1.go(mygroupsid,1,-800);
+	glideToMy2.go(allgroupsid,1,-800);
+	
+	setMy.init();
+}
+function createCancel(){
+	console.log("createCancel()");
+	createG.createCancel();
+}
+function createInput(){
+	console.log("createInput()");
+	createG.createInput();
+}
+function createComplete(){
+	console.log("createComplete()");
+	createG.createComplete();
+}
