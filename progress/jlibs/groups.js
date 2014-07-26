@@ -1,3 +1,5 @@
+var groupsServerUrl = "http://localhost/EventProgress/progress/phps/groups_handler.php";
+
 var mygroupsid = "mygroups_window";
 var allgroupsid = "groupslist_window";
 
@@ -43,7 +45,7 @@ var createG = function(){
 			
 			var jsonData = JSON.stringify(groupMsgObj);
 			sendData = jsonData;
-			Im.sendRequest("http://localhost/EventProgress/progress/phps/groups_handler.php",jsonData,"POST",this.createCompleteResponse);
+			Im.sendRequest(groupsServerUrl,jsonData,"POST",this.createCompleteResponse);
 		},
 		createCompleteResponse : function(){
 			
@@ -53,7 +55,7 @@ var createG = function(){
 var setAll = function(){
 	return{
 		init:function(){
-			Im.sendRequest("http://localhost/EventProgress/progress/phps/groups_handler.php","allinit","POST",this.setAllInitResponse);
+			Im.sendRequest(groupsServerUrl,"allinit","POST",this.setAllInitResponse);
 		},
 		setAllInitResponse : function(){
 			returnState = xmlRequest.readyState;
@@ -91,7 +93,7 @@ var setMy = function(){
 	
 	return{
 		init:function(){			
-			Im.sendRequest("http://localhost/EventProgress/progress/phps/groups_handler.php","myinit","POST",this.setMyInitResponse);
+			Im.sendRequest(groupsServerUrl,"myinit","POST",this.setMyInitResponse);
 		},
 		setMyInitResponse : function(){
 			returnState = xmlRequest.readyState;

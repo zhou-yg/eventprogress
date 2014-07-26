@@ -1,7 +1,7 @@
 #blank{
 	display: none;
 }
-.loginCantainer{
+.groupCantainer{
 	
 	background:#000000;
 	opacity:0.7;
@@ -15,7 +15,7 @@
 	display: none;
 	z-index: 5;
 }
-.loginFrame{
+.groupFrame{
 	
 	width: 400px;
 	position: fixed;
@@ -30,14 +30,14 @@
 	display:none;
 	z-index: 10;
 }
-.loginContent{
+.groupContent{
 	position: relative;
 	top:0;
 	padding:20px;
 	
 	z-index: 1;
 }
-.loginTitle{
+.groupTitle{
 	margin: 0 auto;
 	background:none;
 	color:#FFFFFF;
@@ -78,7 +78,7 @@
 	
 	
 }
-.loginBtn{
+.groupBtn{
 	color:#FFFFFF;
 	background: none;
 	border: 0;
@@ -86,7 +86,7 @@
 	text-align: center;
 	cursor: pointer;
 }
-.loginBg{
+.groupBg{
 	background:#06a7e1;
 	width: 80px;
 	height:40px;

@@ -3,8 +3,8 @@ var xmlRequest;
 var sendData = "";
 var returnData = "";
 var returnState = "";
-var serverUrl = "http://localhost/SSHTest/";
-var basicUrl = "http://localhost/SSHTest/Blackmarket/";
+var serverUrl = "";
+var basicUrl = "";
 
 var Im = function() {
 
